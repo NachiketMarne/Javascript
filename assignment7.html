@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment7</title>
+</head>
+<body>
+    <!-- 7.  Write a JavaScript function that reverse a number.
+    Example x = 32243;
+    Expected Output : 34223 -->
+    <p id="reverseString"> </p>
+
+
+    <script>
+        let num = 32243;
+        let numToString = num.toString();
+        let splitString = numToString.split("");
+        let reverseString = splitString.reverse().join('');
+        document.getElementById("reverseString").innerHTML = reverseString;
+    </script>
+</body>
+</html>

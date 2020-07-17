@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment2</title>
+</head>
+<body>
+    <!-- 2. Write a JavaScript program to get the width and height of the window (any time the window is resized). -->
+    <p id="demo"> Window Height Width</p>
+
+    <script>
+        window.addEventListener('resize', update);
+        let x = window.document.getElementById('demo');
+        update();
+
+        function update(){
+            x.innerHTML = 'Browser width is' + window.innerWidth +  ' Browser height is ' + window.innerHeight;
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment3</title>
+</head>
+<body>
+    <!-- 3. Write a JavaScript program to display the reading status (i.e. display book name, author name and reading status) of the following books.
+
+var library = [ 
+   {
+       author: 'Bill Gates',
+       title: 'The Road Ahead',
+       readingStatus: true
+   },
+   {
+       author: 'Steve Jobs',
+        title: 'Walter Isaacson',
+       readingStatus: true
+   },
+   {
+       author: 'Suzanne Collins',
+       title:  'Mockingjay: The Final Book of The Hunger Games', 
+       readingStatus: false
+   }]; -->
+   <p id="readingStatus"> </p>
+
+   <script>
+        var library = [ 
+            {
+                author: 'Bill Gates',
+                title: 'The Road Ahead',
+                readingStatus: true
+            },
+            {
+                author: 'Steve Jobs',
+                title: 'Walter Isaacson',
+                readingStatus: true
+            },
+            {
+                author: 'Suzanne Collins',
+                title:  'Mockingjay: The Final Book of The Hunger Games', 
+                readingStatus: false
+            }];
+
+            var ourReadingStatus =  document.getElementById('readingStatus');
+            for(let i = 0; i < library.length; i++){
+                console.log(library[i]);
+                var readingStatus = library[i].readingStatus;
+                ourReadingStatus.innerHTML += "reading Status is " + library[i].readingStatus + '</br>';
+            }
+    </script>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment6</title>
+</head>
+<body>
+    <!-- 6. Write a JavaScript program which iterates the integers from 1 to 100. But for multiples of three print "Fizz" instead of the number and for the multiples of five print "Buzz". For numbers which are multiples of both three and five print "FizzBuzz" -->
+    <p id="numbers"> </p>
+
+
+    <script>
+
+        let fizz = [];
+        let buzz = [];
+        let fizzBuzz = [];
+    
+        for(let i = 1;i <= 100;i++){
+        if( i % 3 == 0 && i % 5 == 0){
+            fizzBuzz.push(i);
+        } else if ( i % 3 == 0){
+            fizz.push(i);
+        } else if ( i % 5 == 0){
+            buzz.push(i);
+        }
+        }
+        document.getElementById('numbers').innerHTML = '<h2>Fizz Num</h2> </br>' +  fizz + '</br> </br>' + '<h2>Buzz Num</h2> </br>' +  buzz + '</br> </br>' +'<h2>FizzBuzz Num</h2> </br>' +  fizzBuzz + '</br> </br>' ;
+    
+    </script>
+</body>
+</html>
